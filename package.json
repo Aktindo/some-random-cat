@@ -10,6 +10,13 @@
     "type": "git",
     "url": "https://github.com/aktindo/some-random-cat.git"
 },
+"keywords": [
+  "randomapi",
+  "something-random",
+  "some-random-cat",
+  "some-random",
+  "random"
+],
   "author": "Aktindo",
   "license": "ISC",
   "dependencies": {

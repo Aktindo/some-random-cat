@@ -16,4 +16,4 @@ somethingRandom.Random.newCat()
 .catch(e => console.error(e)) // Catch the error
 ```
  ## Documentation
-It will be soon available in v1.1.00
+It will be soon available in v1.1.0

@@ -4,7 +4,11 @@ description: to Some Random Cat!
 
 # Introduction
 
-This is the official documentation for some-random-cat. Docs version \(v1.0.0\)
+{% hint style="danger" %}
+Please move to Docs [v1.0.5](https://cat-5.gitbook.io/some-random-cat/)! This documentation is no longer supported and is deprecated. Contains code that is no longer supported in the latest version.
+{% endhint %}
+
+This is the official **deprecated** documentation for some-random-cat. Docs version \(v1.0.0\)
 
 ## Installation
 
@@ -30,7 +34,8 @@ Generate a random cat image:
 
 ```javascript
 const somethingRandom = require('some-random-cat')
-somethingRandom.Random.newCat()
+const Random = new somethingRandom()
+Random.newCat()
 .then(res => console.log(res)) // The function returns a pending promise and can be logged using .then
 .catch(e => console.error(e)) // Catch the error
 ```

@@ -8,7 +8,8 @@ description: An example of how to generate a random cat image!
 
 ```javascript
 const somethingRandom = require('some-random-cat')
-somethingRandom.Random.newCat()
+const Random = new somethingRandom()
+Random.newCat()
 .then(res => console.log(res)) // The function returns a pending promise and can be logged using .then
 .catch(e => console.error(e)) // Catch the error
 ```

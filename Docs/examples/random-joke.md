@@ -8,7 +8,8 @@ description: An example of how to generate a random joke!
 
 ```javascript
 const somethingRandom = require('some-random-cat')
-somethingRandom.Random.newJoke()
+const Random = new somethingRandom()
+Random.newJoke()
 .then(res => console.log(res)) // The function returns a pending promise and can be logged using .then
 .catch(e => console.error(e)) // Catch the error
 ```

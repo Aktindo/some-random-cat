@@ -24,18 +24,6 @@ Random method to generate a random cat image.
 Returns: [`Promise<Pending>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\`\`
 {% endhint %}
 
-#### `.newDog()` `STATIC`
-
-Random method to generate a random dog image.
-
-| Type | Description |
-| :--- | :--- |
-| any | URL for the image. |
-
-{% hint style="success" %}
-Returns: [`Promise<Pending>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\`\`
-{% endhint %}
-
 #### `.newJoke()` `STATIC`
 
 Random method to generate a random joke.
@@ -43,18 +31,6 @@ Random method to generate a random joke.
 | Type | Description |
 | :--- | :--- |
 | any | An object with the title, description and URL |
-
-{% hint style="success" %}
-Returns: [`Promise<Pending>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\`\`
-{% endhint %}
-
-#### `.newString()` `STATIC`
-
-Random method to generate a random string.
-
-| Parameter | Type | Description |
-| :--- | :--- | :--- |
-| number | number | The length of the string. |
 
 {% hint style="success" %}
 Returns: [`Promise<Pending>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\`\`

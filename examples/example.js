@@ -1,2 +1,4 @@
-const { Random } = require("../src/app")
-const random = new Random()
+const random = require('../index')
+random.Random.newCat()
+.then(res => console.log(res))
+.catch(e => console.error(e))

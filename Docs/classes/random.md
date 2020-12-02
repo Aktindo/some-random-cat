@@ -6,10 +6,6 @@ description: >-
 
 # Random
 
-{% hint style="danger" %}
-Please do not instantiate this class! It is fully static. You can access it with `require('some-random-cat').Random`
-{% endhint %}
-
 ## Methods
 
 #### `.newCat()`  `STATIC`

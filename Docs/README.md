@@ -8,7 +8,7 @@ description: to Some Random Cat!
 Please move to Docs [v1.0.5](https://cat-5.gitbook.io/some-random-cat/)! This documentation is no longer supported and is deprecated. Contains code that is no longer supported in the latest version.
 {% endhint %}
 
-This is the official documentation for some-random-cat. Docs version \(v1.0.0\)
+This is the official **deprecated** documentation for some-random-cat. Docs version \(v1.0.0\)
 
 ## Installation
 

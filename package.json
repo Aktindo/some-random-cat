@@ -1,6 +1,6 @@
 {
   "name": "some-random-cat",
-  "version": "1.0.5",
+  "version": "1.0.55",
   "description": "A utility which generates random cat images with a URL",
   "main": "index.js",
   "scripts": {

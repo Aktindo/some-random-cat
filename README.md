@@ -5,7 +5,7 @@ A very suitable API to generate random images of cats, dogs and random jokes, fa
 
 **Dependencies:** axios 
 
-**Versions:** v1.0.0 (current) 
+**Versions:** v1.0.5 (current) 
 
 ## How to use it? (Example) 
 Generate a random picture of cat:
@@ -17,3 +17,6 @@ somethingRandom.Random.newCat()
 ```
  ## Documentation
 It will be soon available in v1.1.5
+
+## New features
+Soon in v1.1 , A new module called math will be implemented too!

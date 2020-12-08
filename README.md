@@ -1,9 +1,9 @@
 # some-random-cat
-![Total Downloads](https://img.shields.io/npm/dt/some-random-cat?label=Downloads?style=for-the-badge)
-![Discord](https://img.shields.io/discord/772129415005470740?color=%237289DA&label=Discord&logo=Discord?style=for-the-badge)
+![Total Downloads](https://img.shields.io/npm/dt/some-random-cat?style=for-the-badge&label=Downloads)
+![Discord](https://img.shields.io/discord/772129415005470740?color=%237289DA&label=Discord&logo=Discord&style=for-the-badge)
 ![npm](https://img.shields.io/npm/v/some-random-cat?style=for-the-badge)
 ![NPM](https://img.shields.io/npm/l/some-random-cat?style=for-the-badge)
-![GitHub Repo stars](https://img.shields.io/github/stars/aktindo/some-random-cat?style=social?style=for-the-badge)
+![GitHub Repo stars](https://img.shields.io/github/stars/aktindo/some-random-cat?style=for-the-badge)
 
 A very suitable API to generate random images of cats, dogs and random jokes, facts... A lot more! 
  

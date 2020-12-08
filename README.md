@@ -18,6 +18,6 @@ somethingRandom.Random.newCat()
 .catch(e => console.error(e)) // Catch the error
 ```
  ## Documentation
-[Click Here]('./Docs/SUMMARY.md)
+[Click Here](https://github.com/Aktindo/some-random-cat/blob/main/Docs/SUMMARY.md)
 ## New features
 Thinking of adding mroe random things.... Suggestions are welcome!

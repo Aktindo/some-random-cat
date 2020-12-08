@@ -1,5 +1,6 @@
 # some-random-cat
 ![Total Downloads](https://img.shields.io/npm/dt/some-random-cat?label=Downloads)
+
 A very suitable API to generate random images of cats, dogs and random jokes, facts... A lot more! 
  
 **Author:** Aktindo 
@@ -17,7 +18,6 @@ somethingRandom.Random.newCat()
 .catch(e => console.error(e)) // Catch the error
 ```
  ## Documentation
-It will be soon available in v1.1.5
-
+[Click Here]('./Docs/SUMMARY.md)
 ## New features
-Soon in v1.1 , A new module called math will be implemented too!
+Thinking of adding mroe random things.... Suggestions are welcome!

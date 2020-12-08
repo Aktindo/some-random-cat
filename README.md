@@ -1,4 +1,5 @@
 # some-random-cat
+![Total Downloads](https://img.shields.io/npm/dt/some-random-cat?label=Downloads)
 A very suitable API to generate random images of cats, dogs and random jokes, facts... A lot more! 
  
 **Author:** Aktindo 

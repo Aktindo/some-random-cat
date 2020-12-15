@@ -7,11 +7,18 @@ description: An example of how to generate a random cat image!
 ## Code
 
 ```javascript
-const somethingRandom = require('some-random-cat')
-const Random = new somethingRandom()
-Random.newCat()
-.then(res => console.log(res)) // The function returns a pending promise and can be logged using .then
-.catch(e => console.error(e)) // Catch the error
+// This snippet uses some-random-cat version 2.0
+
+const somethingRandom = require('some-random-cat').Random
+somethingRandom.getCat()
+.then(res => {
+    console.log(res)
+    return
+}) // Get the result
+.catch(e => {
+    console.error(e)
+    return
+}) // Catch the error
 ```
 
 ## Output

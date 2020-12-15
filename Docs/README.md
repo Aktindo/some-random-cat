@@ -4,11 +4,9 @@ description: to Some Random Cat!
 
 # Introduction
 
-{% hint style="danger" %}
-Please move to Docs [v1.0.5](https://cat-5.gitbook.io/some-random-cat/)! This documentation is no longer supported and is deprecated. Contains code that is no longer supported in the latest version.
-{% endhint %}
+![Total Downloads](https://img.shields.io/npm/dt/some-random-cat?style=for-the-badge&label=Downloads) ![Discord](https://img.shields.io/discord/772129415005470740?color=%237289DA&label=Discord&logo=Discord&style=for-the-badge) ![npm](https://img.shields.io/npm/v/some-random-cat?style=for-the-badge) ![NPM](https://img.shields.io/npm/l/some-random-cat?style=for-the-badge) ![GitHub Repo stars](https://img.shields.io/github/stars/aktindo/some-random-cat?style=for-the-badge)
 
-This is the official **deprecated** documentation for some-random-cat. Docs version \(v1.0.0\)
+This is the official documentation for some-random-cat. Docs version \(v2.0\)
 
 ## Installation
 
@@ -16,7 +14,7 @@ To install the package, you would have to make sure that node.js is installed on
 
 ## About
 
-I saw that there were not many good packages for generating random stuff. So I decided to make one.   
+I saw that there were not many good packages for generating random stuff. So I decided to make one.  
 A very suitable API to generate random images of cats, dogs and random jokes, facts... A lot more!
 
 ## Why?
@@ -33,11 +31,16 @@ A very suitable API to generate random images of cats, dogs and random jokes, fa
 Generate a random cat image:
 
 ```javascript
-const somethingRandom = require('some-random-cat')
-const Random = new somethingRandom()
-Random.newCat()
-.then(res => console.log(res)) // The function returns a pending promise and can be logged using .then
-.catch(e => console.error(e)) // Catch the error
+const somethingRandom = require('some-random-cat').Random //Import the package
+somethingRandom.getCat()
+.then(res => {
+    console.log(res)
+    return
+}) // Get the result
+.catch(e => {
+    console.error(e)
+    return
+}) // Catch the error
 ```
 
 ## Statistics

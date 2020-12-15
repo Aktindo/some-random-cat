@@ -91,7 +91,7 @@ Returns: [`Promise<Pending>`](https://developer.mozilla.org/en-US/docs/Web/JavaS
 | number | Number |       ❌ | The length of the string. |
 
 {% hint style="success" %}
-Returns: [Promise&lt;Pending&gt;](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+Returns: [`Promise<Pending>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\`\`
 {% endhint %}
 
 ### `.getTopic()` `STATIC`
@@ -103,6 +103,8 @@ Random method to generate a topic.
 | any | The string with the topic. |
 
 {% hint style="success" %}
-Returns: [Promise&lt;Pending&gt;](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+Returns:[`Promise<Pending>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\`\`
 {% endhint %}
+
+
 

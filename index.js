@@ -1,3 +1,4 @@
 module.exports = {
-    Random: require("./src/app"),
+    Random: require("./src/Random"),
+    Util: require("./src/Util")
 }

@@ -72,7 +72,7 @@ Random method to generate a random joke.
 Returns: [`Promise<Pending>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 {% endhint %}
 
-### `.getMeme()` `STATIC`
+### `.getMeme(sub)` `STATIC`
 
 Random method to generate a meme.
 
@@ -84,7 +84,7 @@ Random method to generate a meme.
 Returns: [`Promise<Pending>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\`\`
 {% endhint %}
 
-### `.getString()` `STATIC`
+### `.getString(number)` `STATIC`
 
 | Parameters | Type | Optional | Description |
 | :--- | :--- | :--- | :--- |

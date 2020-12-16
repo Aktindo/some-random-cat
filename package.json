@@ -4,7 +4,7 @@
   "description": "A very suitable API to generate random images of cats, dogs and random jokes, facts... A lot more!",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

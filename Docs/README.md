@@ -1,6 +1,8 @@
 # Introduction
 
-![Total Downloads](https://img.shields.io/npm/dt/some-random-cat?style=for-the-badge&label=Downloads) ![Discord](https://img.shields.io/discord/772129415005470740?color=%237289DA&label=Discord&logo=Discord&style=for-the-badge) ![npm](https://img.shields.io/npm/v/some-random-cat?style=for-the-badge) ![NPM](https://img.shields.io/npm/l/some-random-cat?style=for-the-badge) ![GitHub Repo stars](https://img.shields.io/github/stars/aktindo/some-random-cat?style=for-the-badge)
+[![NPM](https://nodei.co/npm/some-random-cat.png)](https://nodei.co/npm/some-random-cat/)
+
+![Total Downloads](https://img.shields.io/npm/dt/some-random-cat?style=flat&label=Downloads) ![Discord](https://img.shields.io/discord/772129415005470740?color=%237289DA&label=Discord&logo=Discord&style=flat) ![npm](https://img.shields.io/npm/v/some-random-cat?style=flat) ![NPM](https://img.shields.io/npm/l/some-random-cat?style=flat) ![GitHub Repo stars](https://img.shields.io/github/stars/aktindo/some-random-cat?style=flat)
 
 This is the official documentation for some-random-cat. Docs version \(v2.0\)
 

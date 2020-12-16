@@ -7,7 +7,15 @@
 * [Random Cat Image](examples/random-cat-image.md)
 * [Random Joke](examples/random-joke.md)
 
-## Classes
+## Documentation <a id="docs"></a>
 
-* [Random](classes/random.md)
+---
+
+* [Classes](classes/README.md)
+  * [Random](classes/random.md)
+  * [Util](classes/util.md)
+
+## Misc
+
+* [Reading Notation](misc/reading-notation.md)
 

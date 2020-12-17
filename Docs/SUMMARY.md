@@ -9,11 +9,9 @@
 
 ## Documentation <a id="docs"></a>
 
----
-
-* [Classes](classes/README.md)
-  * [Random](classes/random.md)
-  * [Util](classes/util.md)
+* [Classes](docs/classes/README.md)
+  * [Random](docs/classes/random.md)
+  * [Util](docs/classes/util.md)
 
 ## Misc
 

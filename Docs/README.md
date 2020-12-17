@@ -4,7 +4,10 @@
 
 ![Total Downloads](https://img.shields.io/npm/dt/some-random-cat?style=flat&label=Downloads) ![Discord](https://img.shields.io/discord/772129415005470740?color=%237289DA&label=Discord&logo=Discord&style=flat) ![npm](https://img.shields.io/npm/v/some-random-cat?style=flat) ![NPM](https://img.shields.io/npm/l/some-random-cat?style=flat) ![GitHub Repo stars](https://img.shields.io/github/stars/aktindo/some-random-cat?style=flat)
 
-This is the official documentation for some-random-cat. Docs version \(v2.0\)
+Written in JavaScript ![](.gitbook/assets/javascript.svg)   
+Edited in Visual Studio Code ![](.gitbook/assets/visualstudiocode.svg) 
+
+Yo, this is the insider build documentation that has new features documented! See the dev branch in github for the same.
 
 ## Installation
 
@@ -43,8 +46,7 @@ somethingRandom.getCat()
 
 ## Statistics
 
-* 200 weekly downloads
-* and... growing!
-
-{% page-ref page="classes/random.md" %}
+* 600+ downloads
+* 
+{% page-ref page="docs/classes/random.md" %}
 

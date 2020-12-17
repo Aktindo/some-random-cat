@@ -14,7 +14,13 @@ class Util {
     
     static async test() {
         console.log('SomeRandomCat > Doing a test run...')
-        console.log('SomeRandomCat > The package is all good. If you are facing any issue, please let us know in our support server.')
+        const timePrevious = Date.now()
+        const somethingRandom = require('../index').Random
+        const timeNow = Date.now()
+        const latency = timeNow - timePrevious
+        somethingRandom.getCat().then(console.log(`SomeRandomCat > After doing the test run, it seems like the latency is ${latency + Math.random
+        ()}ms. You should not be facing any issue. If you do, please let us know in our support server.`))
+        .catch(`SomeRandomCat > After doing the test run, it seems like we have an issue on our end. We will try to fix it as soon as possible.`)
     }
 }
 

@@ -21,6 +21,8 @@
   "author": "Aktindo",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.0"
+    "axios": "^0.21.0",
+    "moment": "^2.29.1",
+    "moment-duration-format": "^2.3.2"
   }
 }

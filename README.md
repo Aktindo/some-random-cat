@@ -46,5 +46,6 @@ somethingRandom.getCat()
 * 200 weekly downloads
 * and... growing!
 
-{% page-ref page="classes/random.md" %}
+## Documentation
+📖 The official documentation is now available [here](https://somerandomcat.js.org)
 

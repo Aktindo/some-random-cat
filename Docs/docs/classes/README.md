@@ -12,6 +12,8 @@ description: All the classes available for the current version.
 
 ### Go to
 
+{% page-ref page="generation.md" %}
+
 {% page-ref page="random.md" %}
 
 {% page-ref page="util.md" %}

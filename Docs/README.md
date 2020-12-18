@@ -7,7 +7,7 @@
 Written in JavaScript ![](.gitbook/assets/javascript.svg)   
 Edited in Visual Studio Code ![](.gitbook/assets/visualstudiocode.svg) 
 
-Yo, this is the insider build documentation that has new features documented! See the dev branch in github for the same.
+Hi there, this is the insider build documentation that has new features documented! See the dev branch in GitHub for the same.
 
 ## Installation
 

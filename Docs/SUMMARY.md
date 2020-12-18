@@ -10,6 +10,7 @@
 ## Documentation <a id="docs"></a>
 
 * [Classes](docs/classes/README.md)
+  * [Generation](docs/classes/generation.md)
   * [Random](docs/classes/random.md)
   * [Util](docs/classes/util.md)
 

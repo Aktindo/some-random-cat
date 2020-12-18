@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/aktindo/some-random-cat.git"
   },
-  "homepage": "https://random-cat.gitbook.io/some-random-cat/",
+  "homepage": "https://somerandomcat.js.org/",
   "keywords": [
     "randomapi",
     "something-random",
@@ -21,6 +21,8 @@
   "author": "Aktindo",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.0"
+    "axios": "^0.21.0",
+    "moment": "^2.29.1",
+    "moment-duration-format": "^2.3.2"
   }
 }

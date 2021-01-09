@@ -29,22 +29,29 @@ A very suitable API to generate random images of cats, dogs and random jokes, fa
 Generate a random cat image:
 
 ```javascript
-const somethingRandom = require('some-random-cat').Random //Import the package
-somethingRandom.getCat()
+const SomeRandomCat = require('../index').Random; // Replace ../index with some-random-cat
+SomeRandomCat.getCat() // Function for generating cat
 .then(res => {
     console.log(res)
     return
-}) // Get the result
+})
 .catch(e => {
     console.error(e)
     return
-}) // Catch the error
+});
 ```
+
+## Contributing
+
+To contribute in this package, simple open a pull request in the github repository. When all the checks for your request have been passed, we can merge it into the main branch.
 
 ## Statistics
 
 * 200 weekly downloads
 * and... growing!
+
+## Support
+Join the support server [here](https://discord.gg/HEQxjNqE)
 
 ## Documentation
 📖 The official documentation is now available [here](https://somerandomcat.js.org)

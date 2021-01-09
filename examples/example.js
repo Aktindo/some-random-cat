@@ -1,5 +1,5 @@
-const SomeRandomCat = require('../index').Random
-SomeRandomCat.getCat()
+const SomeRandomCat = require('../index').Random; // Replace ../index with some-random-cat
+SomeRandomCat.getCat() // Function for generating cat
 .then(res => {
     console.log(res)
     return
@@ -7,4 +7,4 @@ SomeRandomCat.getCat()
 .catch(e => {
     console.error(e)
     return
-})
+});

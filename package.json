@@ -2,9 +2,10 @@
   "name": "some-random-cat",
   "version": "2.2.1",
   "description": "A very suitable API to generate random images of cats, dogs and random jokes, facts... A lot more!",
-  "main": "index.js",
+  "main": "build/src/index.js",
+  "types": "build",
   "scripts": {
-    "test": "node index.js"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,9 @@
   "author": "Aktindo",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^14.14.37",
     "axios": "^0.21.0",
+    "dotenv": "^8.2.0",
     "moment": "^2.29.1",
     "moment-duration-format": "^2.3.2"
   }

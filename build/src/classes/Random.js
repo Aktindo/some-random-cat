@@ -60,6 +60,10 @@ var axios = __importStar(require("axios"));
 var dotenv = __importStar(require("dotenv"));
 var defaultAxios = axios.default;
 dotenv.config();
+/**
+ * Manages all the random methods and is the main module.
+ * @static
+ */
 var Random = /** @class */ (function () {
     /**
      * ⚠ Please do not instantiate this class.
@@ -67,8 +71,8 @@ var Random = /** @class */ (function () {
     function Random() {
     }
     /**
-     *
-     * @returns {Promise<string | void>}
+     * Get a random advice.
+     * @type {string}
      */
     Random.getAdvice = function () {
         return __awaiter(this, void 0, void 0, function () {
@@ -90,6 +94,10 @@ var Random = /** @class */ (function () {
             });
         });
     };
+    /**
+     * Get a random cat.
+     * @type {string}
+     */
     Random.getCat = function () {
         return __awaiter(this, void 0, void 0, function () {
             var res, data;
@@ -108,7 +116,8 @@ var Random = /** @class */ (function () {
         });
     };
     /**
-     * @returns {Promise<string | void>} Returns a URL of the picture.
+     * Get a random dog.
+     * @type {string}
      */
     Random.getDog = function () {
         return __awaiter(this, void 0, void 0, function () {
@@ -127,7 +136,8 @@ var Random = /** @class */ (function () {
         });
     };
     /**
-     * @returns {Promise<string | void>} Returns a string with the fact.
+     * Get a random fact.
+     * @type {string}
      */
     Random.getFact = function () {
         return __awaiter(this, void 0, void 0, function () {
@@ -144,8 +154,8 @@ var Random = /** @class */ (function () {
         });
     };
     /**
-     *
-     * @returns {Promise<string | void>} Returns an object with a promise.
+     * Get a random joke.
+     * @type {string}
      */
     Random.getJoke = function () {
         return __awaiter(this, void 0, void 0, function () {
@@ -165,6 +175,9 @@ var Random = /** @class */ (function () {
         });
     };
     /**
+     *
+     * Get a random meme.
+     * @type {object}
      * @param {string} sub The subreddit's name.
      * @returns {Promise<object | void>} Returns an object with a promise.
      */
@@ -200,6 +213,7 @@ var Random = /** @class */ (function () {
         });
     };
     /**
+     * Get a random pokemon.
      * @param {string} pokemon The name of the pokemon.
      * @returns {Promise<string | void>} Returns a string.
      */
@@ -229,6 +243,7 @@ var Random = /** @class */ (function () {
         });
     };
     /**
+     * Get a string.
      * @param {number} number The length of the string
      * @returns {Promise<string | void>} Returns a string.
      */
@@ -252,6 +267,7 @@ var Random = /** @class */ (function () {
         });
     };
     /**
+     * Get a topic.
      * @returns {Promise<string | void>} Returns a string with the topic.
      */
     Random.getTopic = function () {

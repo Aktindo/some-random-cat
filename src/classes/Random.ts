@@ -4,6 +4,10 @@ import * as dotenv from "dotenv";
 const defaultAxios = axios.default;
 dotenv.config();
 
+/**
+ * Manages all the random methods and is the main module.
+ * @static
+ */
 export class Random {
   /**
    * ⚠ Please do not instantiate this class.
@@ -11,8 +15,8 @@ export class Random {
   constructor() {}
 
   /**
-   *
-   * @returns {Promise<string | void>}
+   * Get a random advice.
+   * @type {string}
    */
 
   public static async getAdvice(): Promise<string | void> {
@@ -25,9 +29,14 @@ export class Random {
       );
     }
 
-    let content = res.slip.advice;
+    let content: string = res.slip.advice;
     return content;
   }
+
+  /**
+   * Get a random cat.
+   * @type {string}
+   */
 
   public static async getCat() {
     const res = await defaultAxios.get(
@@ -45,7 +54,8 @@ export class Random {
   }
 
   /**
-   * @returns {Promise<string | void>} Returns a URL of the picture.
+   * Get a random dog.
+   * @type {string}
    */
   public static async getDog(): Promise<string | void> {
     const res = await defaultAxios.get(
@@ -60,7 +70,8 @@ export class Random {
   }
 
   /**
-   * @returns {Promise<string | void>} Returns a string with the fact.
+   * Get a random fact.
+   * @type {string}
    */
 
   public static async getFact(): Promise<string | void> {
@@ -70,8 +81,8 @@ export class Random {
   }
 
   /**
-   *
-   * @returns {Promise<string | void>} Returns an object with a promise.
+   * Get a random joke.
+   * @type {string}
    */
   public static async getJoke(): Promise<string | void> {
     // https://apis.duncte123.me/joke
@@ -82,6 +93,9 @@ export class Random {
   }
 
   /**
+   *
+   * Get a random meme.
+   * @type {object}
    * @param {string} sub The subreddit's name.
    * @returns {Promise<object | void>} Returns an object with a promise.
    */
@@ -113,6 +127,7 @@ export class Random {
   }
 
   /**
+   * Get a random pokemon.
    * @param {string} pokemon The name of the pokemon.
    * @returns {Promise<string | void>} Returns a string.
    */
@@ -133,6 +148,7 @@ export class Random {
   }
 
   /**
+   * Get a string.
    * @param {number} number The length of the string
    * @returns {Promise<string | void>} Returns a string.
    */
@@ -152,6 +168,7 @@ export class Random {
   }
 
   /**
+   * Get a topic.
    * @returns {Promise<string | void>} Returns a string with the topic.
    */
 

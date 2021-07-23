@@ -1,8 +1,41 @@
 import * as axios from "axios";
 import * as dotenv from "dotenv";
+import path from "path";
 
 const defaultAxios = axios.default;
-dotenv.config();
+dotenv.config()
+
+export interface Advice {
+  id: number;
+  advice: string;
+}
+
+export interface Cat {
+  breeds: Array<any>;
+  id: string;
+  url: string;
+  width: number;
+  weight: number
+}
+
+export interface Joke {
+  title: string;
+  body: string;
+  url: string;
+}
+
+export interface Meme {
+  endpoint: string;
+  img: string;
+  title: string;
+  upvotes: number;
+  downvotes: number;
+  upvoteRatio: number;
+  author: string;
+  comments: number;
+  text: string;
+  post: string;
+}
 
 /**
  * Manages all the random methods and is the main module.
@@ -16,10 +49,10 @@ export class Random {
 
   /**
    * Get a random advice.
-   * @type {string}
+   * @type {Advice}
    */
 
-  public static async getAdvice(): Promise<string | void> {
+  public static async getAdvice(): Promise<Advice | void> {
     const main = await defaultAxios.get("https://api.adviceslip.com/advice");
     const res = await main.data;
 
@@ -29,16 +62,16 @@ export class Random {
       );
     }
 
-    let content: string = res.slip.advice;
+    let content: Advice = res.slip;
     return content;
   }
 
   /**
    * Get a random cat.
-   * @type {string}
+   * @type {Cat}
    */
 
-  public static async getCat() {
+  public static async getCat(): Promise<Cat> {
     const res = await defaultAxios.get(
       "https://api.thecatapi.com/v1/images/search?format=json"
     );
@@ -49,7 +82,7 @@ export class Random {
       );
     }
 
-    let data = res.data[0].url;
+    let data = res.data[0];
     return data;
   }
 
@@ -75,21 +108,22 @@ export class Random {
    */
 
   public static async getFact(): Promise<string | void> {
-    const main = await defaultAxios.get("https://bruhapi.xyz/fact");
+    const main = await defaultAxios.get("https://bruhapi.syntaxpwn.repl.co/fact");
     let content = main.data.res;
     return content;
   }
 
   /**
    * Get a random joke.
-   * @type {string}
+   * @type {Joke}
    */
-  public static async getJoke(): Promise<string | void> {
+  public static async getJoke(): Promise<Joke | void> {
     // https://apis.duncte123.me/joke
     const res = await defaultAxios.get("https://apis.duncte123.me/joke");
     if (!res)
       throw new Error("SomeRandomCat > Error fetching a random joke from API.");
-    else return res.data.data;
+    
+    return res.data.data;
   }
 
   /**
@@ -100,51 +134,19 @@ export class Random {
    * @returns {Promise<object | void>} Returns an object with a promise.
    */
 
-  public static async getMeme(sub: string): Promise<object | void> {
+  public static async getMeme(sub: string): Promise<Meme | void> {
     try {
-      const start = Date.now();
       const response = await defaultAxios.get(
         `https://imageapi.fionn.live/reddit/${sub.toLowerCase()}`
       );
-      const responseTime = Date.now() - start;
 
-      return {
-        img: response.data.img,
-        res: responseTime,
-        title: response.data.title,
-        upvotes: response.data.upvotes,
-        author: response.data.author,
-        upvoteRatio: response.data.upvoteRatio,
-        comments: response.data.comments,
-        downvotes: response.data.downvotes,
-      };
+      return response.data;
     } catch (error) {
       throw new Error(
         "SomeRandomCat > There was an error trying to generate a meme.\n> " +
           error
       );
     }
-  }
-
-  /**
-   * Get a random pokemon.
-   * @param {string} pokemon The name of the pokemon.
-   * @returns {Promise<string | void>} Returns a string.
-   */
-  public static async getPokemon(pokemon: string): Promise<string | void> {
-    if (typeof pokemon !== "string") {
-      throw new TypeError("SomeRandomCat > Please provide a pokemon name.");
-    }
-    const res = await defaultAxios
-      .get("https://api.snowflakedev.xyz/api/pokemon?name=" + pokemon, {
-        headers: {
-          Authorization: process.env.SNOWFLAKE_API_TOKEN,
-        },
-      })
-      .catch(() => {
-        throw new Error("SomeRandomCat > Invalid Pokemon name provided.");
-      });
-    return res.data;
   }
 
   /**

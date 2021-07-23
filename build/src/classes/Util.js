@@ -19,23 +19,27 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Util = void 0;
-var config = __importStar(require("../../package.json"));
-var Util = /** @class */ (function () {
-    function Util() {
-    }
+const config = __importStar(require("../../package.json"));
+/**
+ * A utility class.
+ * @static
+ */
+class Util {
     /**
-     *
-     * @returns {object}
+     * ⚠ Please do not instantiate this class.
      */
-    Util.getInfo = function () {
+    constructor() { }
+    /**
+     * Gets some information on the package.
+     * @type {object}
+     */
+    static getInfo() {
         return {
             version: config.version,
             author: config.author,
             repo: config.repository,
             description: config.description,
         };
-    };
-    return Util;
-}());
-exports.Util = Util;
+    }
+}
+exports.default = Util;

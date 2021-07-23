@@ -1,25 +1,32 @@
 export interface generateIdProps {
     putDash?: boolean;
 }
+/**
+ * Manages all the generation methods and allow you to gen stuff.
+ * @static
+ */
 export declare class Generation {
     /**
-     *
-     * @param {generateIdProps} ops The options for generating a secure ID.
-     * @param {boolean} [ops.putDash] Whether the ID should contain a "-"
-     * @returns {string}
+     * ⚠ Please do not instantiate this class.
+     */
+    constructor();
+    /**
+     * Generate a secure UUID.
+     * @param {generateIdProps} ops The options to generate ID.
+     * @type {string}
      */
     static generateId(ops: generateIdProps): string;
     /**
-     * Returns acronym
-     * @param {string} name Name to parse acronym
-     * @returns {string}
+     * Generate an acronym.
+     * @param {string} name The options to generate ID.
+     * @type {string}
      */
     static getAcronym(name: string): string;
     /**
-     * Shorten text.
-     * @param {string} text Text to shorten
-     * @param {number} length Max Length
-     * @returns {string}
+     * Shortens some text and substrings it with a ... at the end.
+     * @param {string} text Text to perform operation on.
+     * @param {length} number The max length of the string.
+     * @type {string}
      */
     shorten(text: string, length: number): string;
 }

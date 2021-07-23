@@ -1,3 +1,31 @@
+export interface Advice {
+    id: number;
+    advice: string;
+}
+export interface Cat {
+    breeds: Array<any>;
+    id: string;
+    url: string;
+    width: number;
+    weight: number;
+}
+export interface Joke {
+    title: string;
+    body: string;
+    url: string;
+}
+export interface Meme {
+    endpoint: string;
+    img: string;
+    title: string;
+    upvotes: number;
+    downvotes: number;
+    upvoteRatio: number;
+    author: string;
+    comments: number;
+    text: string;
+    post: string;
+}
 /**
  * Manages all the random methods and is the main module.
  * @static
@@ -9,14 +37,14 @@ export declare class Random {
     constructor();
     /**
      * Get a random advice.
-     * @type {string}
+     * @type {Advice}
      */
-    static getAdvice(): Promise<string | void>;
+    static getAdvice(): Promise<Advice | void>;
     /**
      * Get a random cat.
-     * @type {string}
+     * @type {Cat}
      */
-    static getCat(): Promise<any>;
+    static getCat(): Promise<Cat>;
     /**
      * Get a random dog.
      * @type {string}
@@ -29,9 +57,9 @@ export declare class Random {
     static getFact(): Promise<string | void>;
     /**
      * Get a random joke.
-     * @type {string}
+     * @type {Joke}
      */
-    static getJoke(): Promise<string | void>;
+    static getJoke(): Promise<Joke | void>;
     /**
      *
      * Get a random meme.
@@ -39,13 +67,7 @@ export declare class Random {
      * @param {string} sub The subreddit's name.
      * @returns {Promise<object | void>} Returns an object with a promise.
      */
-    static getMeme(sub: string): Promise<object | void>;
-    /**
-     * Get a random pokemon.
-     * @param {string} pokemon The name of the pokemon.
-     * @returns {Promise<string | void>} Returns a string.
-     */
-    static getPokemon(pokemon: string): Promise<string | void>;
+    static getMeme(sub: string): Promise<Meme | void>;
     /**
      * Get a string.
      * @param {number} number The length of the string

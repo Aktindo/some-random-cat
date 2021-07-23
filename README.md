@@ -29,7 +29,7 @@ A very suitable API to generate random images of cats, dogs and random jokes, fa
 Generate a random cat image:
 
 ```javascript
-const SomeRandomCat = require('../index').Random; // Replace ../index with some-random-cat
+const SomeRandomCat = require('some-random-cat').Random;
 SomeRandomCat.getCat() // Function for generating cat
 .then(res => {
     console.log(res)

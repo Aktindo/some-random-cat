@@ -3,7 +3,7 @@ import * as dotenv from "dotenv";
 import path from "path";
 
 const defaultAxios = axios.default;
-dotenv.config()
+dotenv.config();
 
 export interface Advice {
   id: number;
@@ -15,7 +15,7 @@ export interface Cat {
   id: string;
   url: string;
   width: number;
-  weight: number
+  weight: number;
 }
 
 export interface Joke {
@@ -52,7 +52,7 @@ export class Random {
    * @type {Advice}
    */
 
-  public static async getAdvice(): Promise<Advice | void> {
+  public static async getAdvice(): Promise<Advice | null> {
     const main = await defaultAxios.get("https://api.adviceslip.com/advice");
     const res = await main.data;
 
@@ -71,7 +71,7 @@ export class Random {
    * @type {Cat}
    */
 
-  public static async getCat(): Promise<Cat> {
+  public static async getCat(): Promise<Cat | null> {
     const res = await defaultAxios.get(
       "https://api.thecatapi.com/v1/images/search?format=json"
     );
@@ -90,7 +90,7 @@ export class Random {
    * Get a random dog.
    * @type {string}
    */
-  public static async getDog(): Promise<string | void> {
+  public static async getDog(): Promise<string | null> {
     const res = await defaultAxios.get(
       "https://dog.ceo/api/breeds/image/random"
     );
@@ -107,8 +107,10 @@ export class Random {
    * @type {string}
    */
 
-  public static async getFact(): Promise<string | void> {
-    const main = await defaultAxios.get("https://bruhapi.syntaxpwn.repl.co/fact");
+  public static async getFact(): Promise<string | null> {
+    const main = await defaultAxios.get(
+      "https://bruhapi.syntaxpwn.repl.co/fact"
+    );
     let content = main.data.res;
     return content;
   }
@@ -117,24 +119,24 @@ export class Random {
    * Get a random joke.
    * @type {Joke}
    */
-  public static async getJoke(): Promise<Joke | void> {
+  public static async getJoke(): Promise<Joke | null> {
     // https://apis.duncte123.me/joke
     const res = await defaultAxios.get("https://apis.duncte123.me/joke");
     if (!res)
       throw new Error("SomeRandomCat > Error fetching a random joke from API.");
-    
+
     return res.data.data;
   }
 
   /**
    *
    * Get a random meme.
-   * @type {object}
+   * @type {Meme}
    * @param {string} sub The subreddit's name.
-   * @returns {Promise<object | void>} Returns an object with a promise.
+   * @returns {Promise<Meme | null>} Returns an object with a promise.
    */
 
-  public static async getMeme(sub: string): Promise<Meme | void> {
+  public static async getMeme(sub: string): Promise<Meme | null> {
     try {
       const response = await defaultAxios.get(
         `https://imageapi.fionn.live/reddit/${sub.toLowerCase()}`
@@ -152,9 +154,9 @@ export class Random {
   /**
    * Get a string.
    * @param {number} number The length of the string
-   * @returns {Promise<string | void>} Returns a string.
+   * @returns {Promise<string | null>} Returns a string.
    */
-  public static async getString(number: number): Promise<string | void> {
+  public static async getString(number: number): Promise<string | null> {
     const res = await defaultAxios.get(
       `https://apis.duncte123.me/random-string/${number}`
     );
@@ -171,18 +173,21 @@ export class Random {
 
   /**
    * Get a topic.
-   * @returns {Promise<string | void>} Returns a string with the topic.
+   * @returns {Promise<string | null>} Returns a string with the topic.
    */
 
-  public static async getTopic(): Promise<string | void> {
+  public static async getTopic(): Promise<string | null> {
     try {
       const main = await defaultAxios.get("http://bruhapi.xyz/topic");
       let content = main.data.res;
+
       return content;
     } catch (error) {
       throw new Error(
         "SomeRandomCat > Error while fetching a random topic.\n> " + error
       );
     }
+
+    return null;
   }
 }

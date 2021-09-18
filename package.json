@@ -1,6 +1,6 @@
 {
   "name": "some-random-cat",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "A very suitable API to generate random images of cats, dogs and random jokes, facts... A lot more!",
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",

@@ -92,9 +92,9 @@ class Random {
     /**
      *
      * Get a random meme.
-     * @type {object}
+     * @type {Meme}
      * @param {string} sub The subreddit's name.
-     * @returns {Promise<object | void>} Returns an object with a promise.
+     * @returns {Promise<Meme | null>} Returns an object with a promise.
      */
     static async getMeme(sub) {
         try {
@@ -109,7 +109,7 @@ class Random {
     /**
      * Get a string.
      * @param {number} number The length of the string
-     * @returns {Promise<string | void>} Returns a string.
+     * @returns {Promise<string | null>} Returns a string.
      */
     static async getString(number) {
         const res = await defaultAxios.get(`https://apis.duncte123.me/random-string/${number}`);
@@ -122,17 +122,18 @@ class Random {
     }
     /**
      * Get a topic.
-     * @returns {Promise<string | void>} Returns a string with the topic.
+     * @returns {Promise<string | null>} Returns a string with the topic.
      */
     static async getTopic() {
         try {
-            const main = await defaultAxios.get("http://bruhapi.xyz/topic");
+            const main = await defaultAxios.get("https://bruhapi.syntaxpwn.repl.co/topic");
             let content = main.data.res;
             return content;
         }
         catch (error) {
             throw new Error("SomeRandomCat > Error while fetching a random topic.\n> " + error);
         }
+        return null;
     }
 }
 exports.Random = Random;

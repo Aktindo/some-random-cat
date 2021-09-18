@@ -39,45 +39,45 @@ export declare class Random {
      * Get a random advice.
      * @type {Advice}
      */
-    static getAdvice(): Promise<Advice | void>;
+    static getAdvice(): Promise<Advice | null>;
     /**
      * Get a random cat.
      * @type {Cat}
      */
-    static getCat(): Promise<Cat>;
+    static getCat(): Promise<Cat | null>;
     /**
      * Get a random dog.
      * @type {string}
      */
-    static getDog(): Promise<string | void>;
+    static getDog(): Promise<string | null>;
     /**
      * Get a random fact.
      * @type {string}
      */
-    static getFact(): Promise<string | void>;
+    static getFact(): Promise<string | null>;
     /**
      * Get a random joke.
      * @type {Joke}
      */
-    static getJoke(): Promise<Joke | void>;
+    static getJoke(): Promise<Joke | null>;
     /**
      *
      * Get a random meme.
-     * @type {object}
+     * @type {Meme}
      * @param {string} sub The subreddit's name.
-     * @returns {Promise<object | void>} Returns an object with a promise.
+     * @returns {Promise<Meme | null>} Returns an object with a promise.
      */
-    static getMeme(sub: string): Promise<Meme | void>;
+    static getMeme(sub: string): Promise<Meme | null>;
     /**
      * Get a string.
      * @param {number} number The length of the string
-     * @returns {Promise<string | void>} Returns a string.
+     * @returns {Promise<string | null>} Returns a string.
      */
-    static getString(number: number): Promise<string | void>;
+    static getString(number: number): Promise<string | null>;
     /**
      * Get a topic.
-     * @returns {Promise<string | void>} Returns a string with the topic.
+     * @returns {Promise<string | null>} Returns a string with the topic.
      */
-    static getTopic(): Promise<string | void>;
+    static getTopic(): Promise<string | null>;
 }
 //# sourceMappingURL=Random.d.ts.map

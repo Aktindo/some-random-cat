@@ -178,7 +178,9 @@ export class Random {
 
   public static async getTopic(): Promise<string | null> {
     try {
-      const main = await defaultAxios.get("http://bruhapi.xyz/topic");
+      const main = await defaultAxios.get(
+        "https://bruhapi.syntaxpwn.repl.co/topic"
+      );
       let content = main.data.res;
 
       return content;

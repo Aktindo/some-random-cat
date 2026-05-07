@@ -54,5 +54,5 @@ To contribute in this package, simple open a pull request in the github reposito
 Join the support server [here](https://discord.gg/HEQxjNqE)
 
 ## Documentation
-📖 The official documentation is now available [here](https://somerandomcat.js.org)
+📖 The official documentation is now available [here](https://somerandomcat-docs.vercel.app)
 
